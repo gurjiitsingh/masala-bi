@@ -178,16 +178,24 @@ sortOrder: z.union([z.string(), z.number()]).refine((val) => {
   status: z.enum(["published", "draft", "out_of_stock"]),
 
   // ✅ Optional fields
-  discountPrice: z
+ discountPrice: z
     .union([z.string(), z.number()])
     .optional()
-    .transform((val) =>
-      val === undefined || val === "" ? undefined : Number(val)
-    )
+    .transform((val) => {
+      if (val === undefined || val === "") return undefined;
+
+      // Convert comma to dot for decimal handling
+      const normalized =
+        typeof val === "string" ? val.replace(",", ".") : val;
+
+      const num = Number(normalized);
+      return isNaN(num) ? undefined : num;
+    })
     .refine(
       (val) => val === undefined || (!isNaN(val) && val >= 0),
       { message: "Invalid discount price" }
     ),
+
 
   stockQty: z
     .union([z.string(), z.number()])

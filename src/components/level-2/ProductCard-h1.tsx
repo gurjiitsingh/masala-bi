@@ -13,6 +13,7 @@ import AddOn from "../level-1/AddOn";
 import { formatCurrencyNumber } from "@/utils/formatCurrency";
 import CartButtonAdd from "../AddToCart/CartButtonAdd";
 
+
 export default function ProdcutCardHorizontical({
   product,
   allAddOns,
@@ -85,7 +86,7 @@ console.log("settings.currency---------------",settings.currency)
 
   //common code end
   return (
-    <div className="bg-white w-full  lg:w-[48%]    border-1 border-slate-50 flex flex-row   rounded-xl items-center p-1">
+    <div className="bg-white w-full  lg:w-[48%]    shadow-md flex flex-row   rounded-xl items-center p-1">
       <div className="rounded-lg border-1 border-slate-100 flex items-center justify-center w-[120px]   md:w-[150px]    overflow-hidden">
         {product.image && (
           <img

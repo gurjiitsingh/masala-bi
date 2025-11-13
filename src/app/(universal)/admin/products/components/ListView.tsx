@@ -130,7 +130,7 @@ console.log("productsJson----", productsJson,categoriesJson)
               <TableHead>Price</TableHead>
               <TableHead>Discount</TableHead>
               <TableHead>Qty</TableHead>
-              <TableHead>GST</TableHead>
+              <TableHead>Tax</TableHead>
               <TableHead>Status</TableHead>
               <TableHead>Desc</TableHead>
               <TableHead>Action</TableHead>
