@@ -10,8 +10,6 @@ import QuoteBanner from "@/custom/cus-components/QuoteBanner";
 import Catering from "@/custom/cus-components/Catering";
 import BestOfMonth from "@/custom/cus-components/BestOfMonth";
 import SlidersByCatId from "@/custom/cus-components/SlidersByCatId";
-import DiscountSection from "@/custom/cus-components/DiscountSection";
-import WelcomeBanner from "@/custom/cus-components/WelcomeBanner";
 import HeroSectionCustom from "@/custom/cus-components/HeroSectionCustom";
 import BuffetCard from "@/custom/cus-components/BuffetCard";
 import LunchDiscountCard from "@/custom/cus-components/LunchDiscountCard";
@@ -35,7 +33,8 @@ export default function Page() {
       {/* <FlavorLine /> */}
       {/* <HeroSection /> */}
       <HeroSectionCustom />
-    
+      <FoodItemModalEn />
+      <FoodItemCardDe />
        {/* <DiscountSectionSingle /> */}
       {/* <DiscountSection /> */}
       {/* <WelcomeBanner /> */}

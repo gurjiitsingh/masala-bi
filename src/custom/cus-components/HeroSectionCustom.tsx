@@ -14,9 +14,9 @@ export default function HeroSectionCustom() {
   return (
     <section className="relative w-full overflow-hidden">
       {/* Background Image (Top Section) */}
-      <div className="relative w-full h-[50vh] md:h-[90vh] flex items-center justify-center">
+      <div className="relative w-full h-[50vh] md:h-[100vh] flex items-center justify-center">
         <Image
-          src="/images/3.jpg" // Replace with your image path
+          src="/images/hero-1.jpg" // Replace with your image path
           alt="Restaurant background"
           fill
           className="object-cover"
@@ -24,7 +24,7 @@ export default function HeroSectionCustom() {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/30 md:bg-black/30 " />
+        <div className="absolute inset-0 bg-black/0 md:bg-black/0 " />
 
         {/* Logo only over image on mobile */}
         <div className="absolute  bottom-[13rem] md:bottom-auto md:left-20 md:top-40 flex justify-center md:justify-start z-20">
@@ -41,7 +41,7 @@ export default function HeroSectionCustom() {
         </div>
 
         {/* Curved white bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-white rounded-t-[50%]" />
+        {/* <div className="absolute bottom-0 left-0 right-0 h-20 bg-white rounded-t-[50%]" /> */}
       </div>
 
       {/* Text + Buttons Section (below image on mobile, overlay on desktop) */}
@@ -52,30 +52,11 @@ export default function HeroSectionCustom() {
             <h2
               className={`${chicle.className} text-4xl md:text-5xl my-3 text-[#c36b1e] md:text-white`}
             >
-              Masala Taste of India
+              Masala Briyani
             </h2>
 
             {/* Features */}
-            <ul className="space-y-2 text-base text-[12px] text-center md:text-left">
-              <li className="flex items-center justify-center md:justify-start gap-2 text-[#c36b1e]  md:text-white">
-                <FaThumbsUp className="text-[#c36b1e]  md:text-white   " />
-                Keine Plattformgebühren
-              </li>
-              <li className="flex items-center justify-center md:justify-start gap-2 text-center md:text-left text-[#c36b1e]  md:text-white">
-                <FaShieldAlt className="text-[#c36b1e]  md:text-white  " />
-                Keine Zahlungsgebühren
-              </li>
-              <li className="flex items-center justify-center md:justify-start gap-2 text-center md:text-left text-[#c36b1e]  md:text-white">
-                <FaSmile className="text-[#c36b1e]  md:text-white  " />
-                1135{" "}
-                <a
-                  href="#"
-                  className="underline text-[#c36b1e]  md:text-white hover:text-green-400 "
-                >
-                   Empfehlungen von Gästen
-                </a>
-              </li>
-            </ul>
+       
 
             {/* Buttons */}
             <div className="flex flex-col md:flex-row justify-start gap-4 pt-4">
@@ -87,7 +68,7 @@ export default function HeroSectionCustom() {
                
             
               >
-                🍴 ORDER MENU
+                🍴 ORDER NOW
               </Link>
 
               <Link
@@ -96,7 +77,7 @@ export default function HeroSectionCustom() {
                 className={`${chicle.className}  bg-white text-[#7a1f1f] text-2xl font-bold px-6 py-1 rounded-xl border-1 border-[#7a1f1f] hover:bg-[#7a1f1f] hover:text-white transition text-center`}
                
               >
-                Buffet
+                MENU
               </Link>
             </div>
           </div>
