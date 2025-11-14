@@ -5,6 +5,7 @@ import { UseSiteContext } from "@/SiteContext/SiteContext";
 import dynamic from "next/dynamic";
 import { ProductType } from "@/lib/types/productType";
 import { addOnType } from "@/lib/types/addOnType";
+//import ProdcutCardHorizontical19 from "../custom/cus-componets/ProductCard-h19"
 
 // export type ProductType = {
 //   id: string;
@@ -16,6 +17,7 @@ import { addOnType } from "@/lib/types/addOnType";
 //   [key: string]: any;
 // };
 export default function Products() {
+ 
   const { productCategoryIdG, settings, setAllProduct, productToSearchQuery } =
     UseSiteContext();
 
@@ -33,8 +35,10 @@ export default function Products() {
         return dynamic(() => import("../level-2/ProductCard-h1"));
       case "11":
         return dynamic(() => import("../level-2/ProductCard-h11"));
-      case "21":
-        return dynamic(() => import("../level-2/ProductCard-h21"));
+      case "12":
+        return dynamic(() => import("@/custom/cus-components/ProductCard-custom"));
+      case "19":
+        return dynamic(() => import("../level-2/ProductCard-h12"));
       case "2":
         return dynamic(() => import("../level-2/ProductCard-v2"));
       case "3":
@@ -133,6 +137,10 @@ const data: ProductType[] = await res.json(); // ✅ define type here
       containerClass =
         "flex flex-col md:flex-row md:flex-wrap gap-0 md:gap-0";
       break;
+       case "12":
+      containerClass =
+        "flex flex-col md:flex-row md:flex-wrap gap-3 md:gap-5";
+      break;
     case "2":
     case "3":
       containerClass =
@@ -160,7 +168,8 @@ const data: ProductType[] = await res.json(); // ✅ define type here
   }
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <div id="bf" className="max-w-6xl mx-auto my-6">
+    <div className="px-2">
       <div className={containerClass}>
         {products.map((product, i) => (
           <Card
@@ -169,6 +178,7 @@ const data: ProductType[] = await res.json(); // ✅ define type here
             allAddOns={addOns}
           />
         ))}
+      </div>
       </div>
     </div>
   );

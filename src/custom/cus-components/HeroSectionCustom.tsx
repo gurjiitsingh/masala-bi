@@ -16,7 +16,7 @@ export default function HeroSectionCustom() {
       {/* Background Image (Top Section) */}
       <div className="relative w-full h-[50vh] md:h-[100vh] flex items-center justify-center">
         <Image
-          src="/images/hero-1.jpg" // Replace with your image path
+          src="/images/hero-2.jpg" // Replace with your image path
           alt="Restaurant background"
           fill
           className="object-cover"
@@ -33,7 +33,7 @@ export default function HeroSectionCustom() {
             data-aos="fade-right"
           >
             <img
-              src="/logo-10.webp"
+              src="/logo.png"
               alt="Logo"
               className="w-20 h-20 md:w-24 md:h-24 object-contain"
             />
@@ -50,7 +50,7 @@ export default function HeroSectionCustom() {
           <div className="text-[#2b2b2b] md:text-white max-w-lg px-6 pb-6  mt-[-60px] md:mt-0 md:p-0  text-left md:text-left">
             {/* Title */}
             <h2
-              className={`${chicle.className} text-4xl md:text-5xl my-3 text-[#c36b1e] md:text-white`}
+              className={`${chicle.className} text-5xl md:text-6xl my-3 text-[#bd8a15] md:text-white`}
             >
               Masala Briyani
             </h2>
@@ -64,7 +64,7 @@ export default function HeroSectionCustom() {
                 href="https://eat.allo.restaurant/restaurant/masala-taste-of-india"
                 rel="noopener noreferrer"
                 data-aos="fade-left"
-                className={`${chicle.className}  bg-[#7a1f1f] hover:bg-[#611616] text-2xl text-white font-semibold px-6 py-1 rounded-xl transition text-center tracking-wide`}
+                className={`${chicle.className}  bg-[#bd8a15] hover:bg-[#a07e2f] text-2xl text-white font-semibold px-6 py-1 rounded-xl transition text-center tracking-wide`}
                
             
               >
@@ -74,7 +74,7 @@ export default function HeroSectionCustom() {
               <Link
                 href="/#bf"
                 rel="noopener noreferrer"
-                className={`${chicle.className}  bg-white text-[#7a1f1f] text-2xl font-bold px-6 py-1 rounded-xl border-1 border-[#7a1f1f] hover:bg-[#7a1f1f] hover:text-white transition text-center`}
+                className={`${chicle.className}  bg-white text-[#bd8a15] text-2xl font-bold px-6 py-1 rounded-xl border-1 border-[#bd8a15] hover:bg-[#bd8a15] hover:text-white transition text-center`}
                
               >
                 MENU

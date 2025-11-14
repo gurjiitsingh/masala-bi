@@ -57,7 +57,7 @@ export default function RootLayout({
                   <SafeSideCart />
                 </div>
 
-                <Header />
+                {/* <Header /> */}
 
                 {children}
 

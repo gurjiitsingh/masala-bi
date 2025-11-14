@@ -4,8 +4,7 @@ import { fetchProducts } from "@/app/(universal)/action/products/dbOperation";
 export async function GET() {
   try {
     const products = await fetchProducts();
-    console.log("inside-----------------products")
-
+   
     return NextResponse.json(products, {
       headers: {
         "x-next-cache-tags": "products",

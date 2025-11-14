@@ -78,8 +78,8 @@ export default function ProdcutCardHorizontical({
     // priceDiscounted = product.discountPrice.toString().replace (/\./g, ",");
     priceDiscounted = formatCurrencyNumber(
       product.discountPrice,
-      (settings.currency || "EUR") as string,
-      (settings.locale || "de-DE") as string
+      (settings.currency ) as string,
+      (settings.locale ) as string
     );
   }
 
@@ -104,7 +104,7 @@ export default function ProdcutCardHorizontical({
 
   //common code end
   return (
-    <div className="border-b-1 border-slate-300 w-full bg-white     flex flex-row    items-center p-1">
+    <div className="w-full lg:w-[49%]  shadow-sm  bg-white rounded-xl     flex flex-row    items-center p-1">
       <div className="rounded-2xl flex items-center justify-center w-[120px] h-[120px]  md:w-[150px]  md:h-[150px]  overflow-hidden">
         {product.image && (
           <img
