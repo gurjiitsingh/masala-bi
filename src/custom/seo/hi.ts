@@ -12,14 +12,14 @@ export const BRANDING = {
   delivery_note: "Delivery is also available.",
   home_page_disclaimer:"",// "Food may differ from image.",
   brand: "Masala",
-  tag_line: "Taste of India",
-  brand_name: "Masala Taste of India",
+  tag_line: "Biryani",
+  brand_name: "Masala Biryani",
    poweredBy: "Powered by",
     poweredByUrl: "http://www.gstadeveloper.com",
     copyright: {
       prefix: "Copyright ©",
       suffix: "All Rights Reserved by",
-      company: "Masala Taste of India"
+      company: "Masala Biryani"
     },
 
 
@@ -30,7 +30,7 @@ export const BRANDING = {
   copyright: {
     prefix: "Copyright ©",
     suffix: "All Rights Reserved by",
-    company: "Masala Taste of India",
+    company: "Masala Biryani",
   },
 },
 

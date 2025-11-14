@@ -19,7 +19,7 @@ export default function FlyerBuffet() {
         {/* Right side: Text + QR integrated */}
         <div className="w-full md:w-1/2 flex flex-col space-y-6">
           <div>
-            <h2 className="w-full  playfair-display-400 text-left text-[#2B2E4A] text-3xl md:text-4xl font-bold mb-2">MASALA  <span className="text-[#d24a0f]">– Taste of India</span></h2>
+            <h2 className="w-full  playfair-display-400 text-left text-[#2B2E4A] text-3xl md:text-4xl font-bold mb-2">MASALA  <span className="text-[#d24a0f]">– Biryani</span></h2>
             <h2 className="text-2xl font-bold mb-2">Indisches Buffet</h2>
             <h3 className="text-xl font-semibold mb-4">
               + Alkoholfreies Getränk <span className="text-sm font-normal">(1× – 0,4 L)</span>

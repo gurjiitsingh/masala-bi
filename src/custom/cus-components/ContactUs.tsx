@@ -6,7 +6,7 @@ export default function ContactUs() {
       <div className="flex flex-col gap-8 md:flex-row my-24 justify-between">
         {/* Address Section */}
         <div className="flex flex-col">
-          <h1 className="text-[#333] text-[3rem]">Masala Taste of India</h1>
+          <h1 className="text-[#333] text-[3rem]">Masala Biryani</h1>
           <div className="w-full md:w-[50%] space-y-3 text-lg">
             <a
               className="relative mb-5 block aspect-square w-20"

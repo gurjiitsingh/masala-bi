@@ -26,7 +26,7 @@ export default function WelcomeBanner() {
       <h1
         className={`${chicle.className}  text-[#D28424] text-[39px] leading-9 md:text-5xl font-extrabold mt-1   `}
       >
-        Masala   Taste of India,
+        Masala   Biryani,
        
       </h1>
 

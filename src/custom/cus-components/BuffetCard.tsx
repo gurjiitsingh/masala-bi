@@ -41,7 +41,7 @@ export default function BuffetCard() {
             <h2
               className={`${chicle.className} text-[22px] sm:text-[26px] md:text-[28px] font-bold text-[#7a1512]`}
             >
-              MASALA – Taste of India
+              MASALA – Biryani
             </h2>
 
             {/* Two-column content */}

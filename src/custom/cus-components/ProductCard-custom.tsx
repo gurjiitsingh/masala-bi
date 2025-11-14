@@ -17,6 +17,7 @@ const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"] });
 const abel = Abel({ subsets: ["latin"], weight: "400" });
 
 import { Inter } from "next/font/google";
+import { FaLeaf } from "react-icons/fa";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -170,15 +171,15 @@ export default function ProdcutCardHorizontical19({
               product.discountPrice > 0 ? (
                 <div className="flex justify-between gap-3 items-center">
                   {" "}
-                  <div className="text-md font-bold text-gray-500">
+                  <div className="text-md font-bold text-slate-500">
                     {priceDiscounted}
                   </div>
-                  <div className="line-through text-sm text-slate-300">
+                  <div className="line-through text-sm text-slate-400">
                     {priceRegular}
                   </div>{" "}
                 </div>
               ) : (
-                <div className="text-md font-bold text-gray-500">
+                <div className="text-md font-bold text-slate-500">
                   {priceRegular}
                 </div>
               )}
@@ -207,16 +208,18 @@ export default function ProdcutCardHorizontical19({
   // }}
 >
   {/* Overlay for readability */}
-  <div className=" rounded-xl p-2">
-    {withoutOptions.map((item) => (
-      <label
-        key={item}
-        className="flex items-center border-amber-100 font-semibold border-b gap-2 text-sm text-gray-400 cursor-pointer py-1"
-      >
-        {item}
-      </label>
-    ))}
-  </div>
+  <div className="rounded-xl p-3 bg-white/90">
+      {withoutOptions.map((item) => (
+        <label
+          key={item}
+          className="flex items-center border-b border-amber-100 last:border-none gap-2 text-sm text-[#bd8a15] cursor-pointer py-2 font-semibold"
+        >
+          <FaLeaf className="w-6 h-6 font-bold text-[#73aa28]" />
+          {item}
+          
+        </label>
+      ))}
+    </div>
 </div>
 
     </div>

@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
 
 
       <p className="mb-4">
-        Bei <strong>Masala Taste of India</strong> (
+        Bei <strong>Masala Biryani</strong> (
         <a href="https://www.masala-gf.de" className="text-blue-600 underline">
           www.masala-gf.de
         </a>

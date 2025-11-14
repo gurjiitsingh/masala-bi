@@ -31,7 +31,7 @@ export default function HeroSection() {
           MASALA
           <span>
             <br />
-            Taste of India
+            Biryani
           </span>
         </h1>
 

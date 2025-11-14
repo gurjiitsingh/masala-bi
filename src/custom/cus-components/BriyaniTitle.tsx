@@ -20,7 +20,7 @@ export default function BiryaniTitle() {
   return (
     <div className="relative my-8 max-w-6xl mx-auto">
       <div
-        className="rounded-3xl mx-3 p-5 shadow-sm bg-cover bg-center bg-no-repeat"
+        className="rounded-3xl mx-2 p-5 shadow-sm bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('/bg-biryani.jpg')",
         }}
@@ -42,8 +42,8 @@ export default function BiryaniTitle() {
         </p>
 
         {/* Floating Button */}
-        <button className="absolute bottom-3 right-3 bg-white rounded-full shadow-md p-3 hover:bg-gray-50 transition">
-          <Megaphone className="w-5 h-5 text-gray-700" />
+        <button className="absolute bottom-3 right-3 bg-[#73aa28] rounded-full shadow-md p-3 hover:bg-gray-50 transition">
+          <Megaphone className="w-5 h-5 text-white" />
         </button>
       </div>
     </div>

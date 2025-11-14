@@ -67,7 +67,7 @@ export default function UnsubscribePage() {
     <div className="container mx-auto py-5 p-1">
       <div className="max-w-xl mx-auto mt-20 p-6 text-center border rounded-lg shadow-sm bg-white">
         <h1 className="text-2xl font-bold mb-4 text-red-600">Wait! Before You Go...</h1>
-        <p className="text-gray-700 mb-6">Are you sure you want to unsubscribe from Masala Taste Of India?</p>
+        <p className="text-gray-700 mb-6">Are you sure you want to unsubscribe from Masala Biryani?</p>
 
         <div className="bg-yellow-100 p-4 rounded-md mb-6">
           <p className="text-yellow-800 font-semibold text-lg">🎁 Here’s a special offer just for you:</p>

@@ -16,7 +16,7 @@ export default function PrivacyPolicy_en() {
       <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
 
       <p className="mb-4">
-        At <strong>Masala Taste of India</strong> (
+        At <strong>Masala Biryani</strong> (
         <a href="https://www.masala-gf.de" className="text-blue-600 underline">
           www.masala-gf.de
         </a>

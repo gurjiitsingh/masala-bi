@@ -50,7 +50,7 @@ export default function HeroSectionCustom() {
             <h2
               className={`${chicle.className} text-3xl md:text-5xl mt-3 text-[#c36b1e] md:text-white`}
             >
-              Masala Taste of India
+              Masala Biryani
             </h2>
 
             {/* Features */}

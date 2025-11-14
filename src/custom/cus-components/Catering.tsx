@@ -11,7 +11,7 @@ export default function Catering() {
         <div className="max-w-2xl flex flex-col items-center">
           <FaUtensils className="text-[#d24a0f] text-5xl mb-4" />
           <h2 className="playfair-display-400 text-3xl md:text-4xl font-bold text-[#2B2E4A] mb-2">
-            MASALA  <span className="text-[#d24a0f]">– Taste of India</span>
+            MASALA  <span className="text-[#d24a0f]">– Biryani</span>
           </h2>
           <p className="text-lg text-[#d24a0f] font-medium mb-4">
             Authentisches indisches Catering in Gifhorn
