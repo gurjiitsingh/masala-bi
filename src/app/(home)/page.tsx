@@ -6,11 +6,13 @@ import { useEffect } from "react";
 import ContactInfo from "@/custom/cus-components/ContactInfo";
 import SlidersByCatId from "@/custom/cus-components/SlidersByCatId";
 
+
 import HeroSectionCustom from "@/custom/cus-components/HeroSectionCustom";
 
 import CategorySliderSm2 from "@/components/level-1/CategorySliderSm2";
 import Products from "@/components/level-1/Products";
 import CategorySliderLight from "@/components/level-1/CategorySliderLight";
+import BriyaniTitle from "@/custom/cus-components/BriyaniTitle";
 
 // import MenuPreview from "@/components/MenuPreview";
 // import Contact from "@/components/Contact";
@@ -28,7 +30,7 @@ export default function Page() {
       {/* <HeroSection /> */}
       <HeroSectionCustom />
 
-  
+  <BriyaniTitle />
       {/* <DiscountSectionSingle /> */}
       {/* <DiscountSection /> */}
       {/* <WelcomeBanner /> */}
