@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { FaThumbsUp, FaShieldAlt, FaSmile } from "react-icons/fa";
-import { Chicle, Ultra, Lobster } from "next/font/google";
+
+import { Chicle } from "next/font/google";
 import Link from "next/link";
 
 const chicle = Chicle({
