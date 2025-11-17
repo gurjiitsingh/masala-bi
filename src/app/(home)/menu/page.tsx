@@ -2,7 +2,6 @@
 
 import { useLanguage } from "@/store/LanguageContext";
 import Products from "@/components/level-1/Products";
-import HeroSectionCustomMenu from "@/custom/cus-components/HeroSectionCustomMenu";
 import CategorySliderLight from "@/components/level-1/CategorySliderLight";
 import HeroSectionCustom from "@/custom/cus-components/HeroSectionCustom";
 
