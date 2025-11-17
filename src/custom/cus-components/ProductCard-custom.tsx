@@ -18,6 +18,9 @@ const abel = Abel({ subsets: ["latin"], weight: "400" });
 
 import { Inter } from "next/font/google";
 import { FaLeaf } from "react-icons/fa";
+ 
+import { GiOni, GiTomato, GiGingerbreadMan } from "react-icons/gi";
+import { PiBowlSteam } from "react-icons/pi";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -60,7 +63,16 @@ export default function ProdcutCardHorizontical19({
   const [quantity, setQuantity] = useState(1);
   const [selectedWithout, setSelectedWithout] = useState<string[]>([]);
 
-  const withoutOptions = ["Fried Onions", "Tomatoes", "Raita", "Ginger"];
+
+
+const iconMap = {
+  "Fried Onions": GiOni,
+  "Tomatoes": GiTomato,
+  "Raita": PiBowlSteam,
+  "Ginger": GiGingerbreadMan,
+};
+
+const withoutOptions = ["Fried Onions", "Tomatoes", "Raita", "Ginger"];
 
   const toggleOption = (item: string) => {
     setSelectedWithout((prev) =>
@@ -124,38 +136,45 @@ export default function ProdcutCardHorizontical19({
   //common code end
   return (
     <div className="w-full lg:w-[49%] flex flex-col  shadow-sm  bg-white rounded-xl ">
-    <div className="flex flex-col    items-center p-1">
-      <div className="rounded-full flex items-center justify-start  w-[120px] h-[120px]  md:w-[150px]  md:h-[150px]  overflow-hidden">
-        {product.image && (
-          <img src={product.image} alt={product.name} className="h-full  " />
-        )}
-      </div>
-
-      <div className="w-full flex flex-col pl-3 justify-between">
-        <div className="w-full flex-col gap-4 justify-center ">
-          <div className="w-full flex gap-1 mb-2 justify-center">
-            <div className={`${chicle.className} flex text-[#bd8a15] font-bold text-5xl items-start justify-center  min-w-[180px] `}>
-              {/* product-card-add-title-cover-1 */}
-              {/* {productCategoryIdG !== "" && <>{product.sortOrder}.&nbsp;</>} */}
-              {product.name}
-            </div>
+      <div className="flex flex-col    items-center p-1">
+        <div className="bg-gray-100 w-full h-fit flex justify-center p-2 rounded-t-xl mb-2">
+          <div className="rounded-full flex items-center justify-start  w-[120px] h-[120px]  md:w-[150px]  md:h-[150px]  overflow-hidden">
+            {product.image && (
+              <img
+                src={product.image}
+                alt={product.name}
+                className="h-full  "
+              />
+            )}
           </div>
+        </div>
+        <div className="w-full flex flex-col pl-3 justify-between">
+          <div className="w-full flex-col gap-4 justify-center ">
+            <div className="w-full flex gap-1 mb-2 justify-center">
+              <div
+                className={`${chicle.className} flex text-[#bd8a15] font-bold text-5xl items-start justify-center  min-w-[180px] `}
+              >
+                {/* product-card-add-title-cover-1 */}
+                {/* {productCategoryIdG !== "" && <>{product.sortOrder}.&nbsp;</>} */}
+                {product.name}
+              </div>
+            </div>
 
-          {/* Description */}
-          {product.productDesc && (
-            <p
-              onClick={() =>
-                alert(product.productDesc ?? "No description available")
-              }
-              className={`${fontDescription.className} text-center text-md text-gray-500 mt-1 line-clamp-3 cursor-pointer`}
-            >
-              {product.productDesc}
-            </p>
-          )}
+            {/* Description */}
+            {product.productDesc && (
+              <p
+                onClick={() =>
+                  alert(product.productDesc ?? "No description available")
+                }
+                className={`${fontDescription.className} text-left text-md text-gray-500 mt-1 line-clamp-3 cursor-pointer`}
+              >
+                {product.productDesc}
+              </p>
+            )}
 
-          {/* <button onClick={() => alert(product.productDesc)}> */}
+            {/* <button onClick={() => alert(product.productDesc)}> */}
 
-          {/* <button
+            {/* <button
             onClick={() =>
               alert(product.productDesc ?? "Keine Beschreibung verfügbar")
             }
@@ -164,64 +183,64 @@ export default function ProdcutCardHorizontical19({
             {product.productDesc}
           </button> */}
 
-          {!product.flavors && (
-            <div className=" flex  items-center  justify-between py-2   rounded-3xl">
-              {/* common code start */}
-              {product.discountPrice !== undefined &&
-              product.discountPrice > 0 ? (
-                <div className="flex justify-between gap-3 items-center">
-                  {" "}
-                  <div className="text-md font-bold text-slate-500">
-                    {priceDiscounted}
+            {!product.flavors && (
+              <div className=" flex  items-center  justify-between py-2   rounded-3xl">
+                {/* common code start */}
+                {product.discountPrice !== undefined &&
+                product.discountPrice > 0 ? (
+                  <div className="flex justify-between gap-3 items-center">
+                    {" "}
+                    <div className="text-md font-bold text-slate-500">
+                      {priceDiscounted}
+                    </div>
+                    <div className="line-through text-sm text-slate-400">
+                      {priceRegular}
+                    </div>{" "}
                   </div>
-                  <div className="line-through text-sm text-slate-400">
+                ) : (
+                  <div className="text-md font-bold text-slate-500">
                     {priceRegular}
-                  </div>{" "}
-                </div>
-              ) : (
-                <div className="text-md font-bold text-slate-500">
-                  {priceRegular}
-                </div>
-              )}
-              {/* Cart Button */}
-              <div className="w-full flex justify-center mx-3 ">
-                {/* {!isCartDisabled ? (
+                  </div>
+                )}
+                {/* Cart Button */}
+                <div className="w-full flex justify-center mx-3 ">
+                  {/* {!isCartDisabled ? (
             <CartButtonAdd cartProduct={cartProduct} />
           ) : (
             <div className="relative group">
             
             </div>
           )} */}
+                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
+      -
+      <div
+        className="flex flex-col gap-2 mt-4 p-2 rounded-b-md bg-cover bg-center bg-no-repeat p-1"
+        // style={{
+        //   backgroundImage: "url('/bg-biryani.jpg')",
+        // }}
+      >
+        {/* Overlay for readability */}
+        <div className="rounded-xl p-3 bg-white/90 flex flex-wrap gap-2">
+      {withoutOptions.map((item) => {
+        const Icon = iconMap[item];
+
+        return (
+          <label
+            key={item}
+            className="flex items-center border rounded-2xl bg-[#f4ead3] py-2 px-3 border-amber-100 gap-2 text-sm text-[#bd8a15] cursor-pointer font-semibold"
+          >
+            <Icon className="w-6 h-6 text-[#73aa28]" />
+            {item}
+          </label>
+        );
+      })}
     </div>
-
-
--
-   <div
-  className="flex flex-col gap-2 mt-4 p-2 rounded-b-md bg-cover bg-center bg-no-repeat p-1"
-  // style={{
-  //   backgroundImage: "url('/bg-biryani.jpg')",
-  // }}
->
-  {/* Overlay for readability */}
-  <div className="rounded-xl p-3 bg-white/90">
-      {withoutOptions.map((item) => (
-        <label
-          key={item}
-          className="flex items-center border-b border-amber-100 last:border-none gap-2 text-sm text-[#bd8a15] cursor-pointer py-2 font-semibold"
-        >
-          <FaLeaf className="w-6 h-6 font-bold text-[#73aa28]" />
-          {item}
-          
-        </label>
-      ))}
-    </div>
-</div>
-
+      </div>
     </div>
   );
 }
