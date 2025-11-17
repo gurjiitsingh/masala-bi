@@ -14,7 +14,7 @@ export default function HeroSectionCustom() {
   return (
     <section className="relative w-full overflow-hidden">
       {/* Background Image (Top Section) */}
-      <div className="relative w-full h-[50vh] md:h-[100vh] flex items-center justify-center">
+      <div className="relative w-full h-[50vh] md:h-screen flex items-center justify-center">
         <Image
           src="/images/hero-2.jpg" // Replace with your image path
           alt="Restaurant background"
@@ -61,7 +61,7 @@ export default function HeroSectionCustom() {
             {/* Buttons */}
             <div className="flex flex-col md:flex-row justify-start gap-4 pt-4">
               <Link
-                href="https://eat.allo.restaurant/restaurant/masala-taste-of-india"
+                href=""
                 rel="noopener noreferrer"
                 data-aos="fade-left"
                 className={`${chicle.className}  bg-[#bd8a15] hover:bg-[#a07e2f] text-2xl text-white font-semibold px-6 py-1 rounded-xl transition text-center tracking-wide`}
@@ -72,7 +72,7 @@ export default function HeroSectionCustom() {
               </Link>
 
               <Link
-                href="/#bf"
+                href="/#product_menu"
                 rel="noopener noreferrer"
                 className={`${chicle.className}  bg-white text-[#bd8a15] text-2xl font-bold px-6 py-1 rounded-xl border-1 border-[#bd8a15] hover:bg-[#bd8a15] hover:text-white transition text-center`}
                

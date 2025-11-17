@@ -226,19 +226,19 @@ const withoutOptions = ["Fried Onions", "Tomatoes", "Raita", "Ginger"];
       >
         {/* Overlay for readability */}
         <div className="rounded-xl p-3 bg-white/90 flex flex-wrap gap-2">
-      {withoutOptions.map((item) => {
-        const Icon = iconMap[item];
+{withoutOptions.map((item) => {
+  const Icon = iconMap[item as keyof typeof iconMap];
 
-        return (
-          <label
-            key={item}
-            className="flex items-center border rounded-2xl bg-[#f4ead3] py-2 px-3 border-amber-100 gap-2 text-sm text-[#bd8a15] cursor-pointer font-semibold"
-          >
-            <Icon className="w-6 h-6 text-[#73aa28]" />
-            {item}
-          </label>
-        );
-      })}
+  return (
+    <label
+      key={item}
+      className="flex items-center border rounded-2xl bg-[#f4ead3] py-2 px-3 border-amber-100 gap-2 text-sm text-[#bd8a15] cursor-pointer font-semibold"
+    >
+      <Icon className="w-6 h-6 text-[#73aa28]" />
+      {item}
+    </label>
+  );
+})}
     </div>
       </div>
     </div>

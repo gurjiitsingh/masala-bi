@@ -168,7 +168,7 @@ const data: ProductType[] = await res.json(); // ✅ define type here
   }
 
   return (
-    <div id="bf" className="max-w-6xl mx-auto my-6">
+    <div id="product_menu" className="max-w-6xl mx-auto my-6">
     <div className="px-2">
       <div className={containerClass}>
         {products.map((product, i) => (
