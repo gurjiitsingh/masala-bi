@@ -61,7 +61,7 @@ export default function HeroSectionCustom() {
             {/* Buttons */}
             <div className="flex flex-col md:flex-row justify-start gap-4 pt-4">
               <Link
-                href=""
+                href="https://eat.allo.restaurant/restaurant/masala-biryani"
                 rel="noopener noreferrer"
                 data-aos="fade-left"
                 className={`${chicle.className}  bg-[#bd8a15] hover:bg-[#a07e2f] text-2xl text-white font-semibold px-6 py-1 rounded-xl transition text-center tracking-wide`}
