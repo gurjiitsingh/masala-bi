@@ -169,7 +169,7 @@ export async function addNewProduct(formData: FormData) {
     const docRef = await adminDb.collection("products").add(data);
 
     revalidateTag("products", "default-cache");
-    revalidateTag("featured-products", "default-cache");;
+    revalidateTag("featured-products", "default-cache");
     
     // ✅ ✅ ✅ REVALIDATE ALL PRODUCT PAGES
     revalidatePath("/"); // storefront home
